@@ -139,7 +139,7 @@ export const TESTIMONIALS: Testimonial[] = [
         id: "testimonial-3",
         name: "Layla Hassan",
         role: "Wedding Planner",
-        quote: "We entrusted Rickys with our catering for a DIFC gala and they exceeded every expectation. Impeccable presentation, outstanding flavors, and flawless service throughout the entire evening.",
+        quote: "We entrusted Rickys with our catering for a DIFC gala and they exceeded every expectation. Outstanding flavors, and flawless service throughout the entire evening.",
         rating: 5,
     },
 ];
