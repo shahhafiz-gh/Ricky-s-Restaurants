@@ -60,21 +60,28 @@ export default function FeaturedDishes() {
         if (!el) return;
 
         const onWheel = (e: WheelEvent) => {
-            e.preventDefault();
-            e.stopPropagation();
-
-            if (wheelCooldown.current) return;
-            wheelCooldown.current = true;
-
-            if (e.deltaY > 0) goNext();
-            else if (e.deltaY < 0) goPrev();
-
-            setTimeout(() => { wheelCooldown.current = false; }, 1000);
+            if (e.deltaY > 0) {
+                if (activeIndex === total - 1) return; // Allow native page scroll
+                e.preventDefault();
+                e.stopPropagation();
+                if (wheelCooldown.current) return;
+                wheelCooldown.current = true;
+                goNext();
+                setTimeout(() => { wheelCooldown.current = false; }, 1000);
+            } else if (e.deltaY < 0) {
+                if (activeIndex === 0) return; // Allow native page scroll
+                e.preventDefault();
+                e.stopPropagation();
+                if (wheelCooldown.current) return;
+                wheelCooldown.current = true;
+                goPrev();
+                setTimeout(() => { wheelCooldown.current = false; }, 1000);
+            }
         };
 
         el.addEventListener("wheel", onWheel, { passive: false });
         return () => el.removeEventListener("wheel", onWheel);
-    }, [goNext, goPrev]);
+    }, [activeIndex, goNext, goPrev, total]);
 
 
     useEffect(() => {
