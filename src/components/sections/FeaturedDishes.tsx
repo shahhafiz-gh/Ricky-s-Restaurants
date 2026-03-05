@@ -60,8 +60,26 @@ export default function FeaturedDishes() {
         if (!el) return;
 
         const onWheel = (e: WheelEvent) => {
+            const rect = el.getBoundingClientRect();
+            const viewHeight = window.innerHeight;
+            const elHeight = rect.height;
+
+            // Allow native scrolling until the section is completely taking up the view area
+            const tolerance = 20; // Allow 20px of leeway for smooth scrolling rounding offsets
+            let isFullyInView = false;
+
+            if (elHeight <= viewHeight) {
+                // If element is smaller than viewport, it's fully in view when contained
+                isFullyInView = rect.top >= -tolerance && rect.bottom <= viewHeight + tolerance;
+            } else {
+                // If element is larger than viewport, it's fully in view when covering the viewport
+                isFullyInView = rect.top <= tolerance && rect.bottom >= viewHeight - tolerance;
+            }
+
+            if (!isFullyInView) return; // Skip carousel hijacking and allow the browser to natively scroll
+
             if (e.deltaY > 0) {
-                if (activeIndex === total - 1) return; // Allow native page scroll
+                if (activeIndex === total - 1) return; // Allow native page scroll out of the section
                 e.preventDefault();
                 e.stopPropagation();
                 if (wheelCooldown.current) return;
@@ -69,7 +87,7 @@ export default function FeaturedDishes() {
                 goNext();
                 setTimeout(() => { wheelCooldown.current = false; }, 1000);
             } else if (e.deltaY < 0) {
-                if (activeIndex === 0) return; // Allow native page scroll
+                if (activeIndex === 0) return; // Allow native page scroll out of the section
                 e.preventDefault();
                 e.stopPropagation();
                 if (wheelCooldown.current) return;
