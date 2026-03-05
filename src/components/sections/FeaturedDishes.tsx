@@ -43,14 +43,16 @@ export default function FeaturedDishes() {
     );
 
     const goNext = useCallback(() => {
+        if (activeIndex === total - 1) return;
         setDirection(1);
-        setActiveIndex((prev) => (prev + 1) % total);
-    }, [total]);
+        setActiveIndex((prev) => prev + 1);
+    }, [activeIndex, total]);
 
     const goPrev = useCallback(() => {
+        if (activeIndex === 0) return;
         setDirection(-1);
-        setActiveIndex((prev) => (prev - 1 + total) % total);
-    }, [total]);
+        setActiveIndex((prev) => prev - 1);
+    }, [activeIndex]);
 
 
     useEffect(() => {
@@ -89,15 +91,14 @@ export default function FeaturedDishes() {
     });
 
 
-    const slots: { index: number; slot: SlotKey }[] = [
-        { index: getIndex(-2), slot: "exitLeft" },
-        { index: getIndex(-1), slot: "left" },
-        { index: getIndex(0), slot: "center" },
-        { index: getIndex(1), slot: "right" },
-        { index: getIndex(2), slot: "enterRight" },
-    ];
+    const slots = [];
+    if (activeIndex >= 2) slots.push({ index: activeIndex - 2, slot: "exitLeft" as SlotKey });
+    if (activeIndex >= 1) slots.push({ index: activeIndex - 1, slot: "left" as SlotKey });
+    slots.push({ index: activeIndex, slot: "center" as SlotKey });
+    if (activeIndex <= total - 2) slots.push({ index: activeIndex + 1, slot: "right" as SlotKey });
+    if (activeIndex <= total - 3) slots.push({ index: activeIndex + 2, slot: "enterRight" as SlotKey });
 
-    const activeDish = FEATURED_DISHES[getIndex(0)];
+    const activeDish = FEATURED_DISHES[activeIndex];
 
 
     const getInitial = (slot: SlotKey) => {
