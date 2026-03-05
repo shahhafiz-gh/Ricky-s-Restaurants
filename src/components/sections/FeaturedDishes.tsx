@@ -127,7 +127,7 @@ export default function FeaturedDishes() {
     };
 
     return (
-        <section id="featured-dishes" className="section-lg bg-background overflow-hidden">
+        <section id="featured-dishes" className="section-lg bg-background overflow-hidden" ref={sectionRef}>
             <div className="container mx-auto">
                 {/* Section Header */}
                 <div className="mb-10 text-center md:mb-14">
@@ -147,7 +147,6 @@ export default function FeaturedDishes() {
                 {/* Circular Arc Carousel */}
                 <FadeIn delay={0.2}>
                     <div
-                        ref={sectionRef}
                         className="relative mx-auto"
                         onMouseEnter={() => setIsPaused(true)}
                         onMouseLeave={() => setIsPaused(false)}
