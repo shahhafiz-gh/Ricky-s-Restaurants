@@ -16,26 +16,26 @@ export const TEAM_MEMBERS: TeamMember[] = [
         name: "Ricky Morales",
         role: "Executive Chef & Founder",
         bio: "With over 25 years of culinary experience across Europe and the Middle East, Chef Ricky brings an unmatched passion for creating memorable dining experiences. Trained at Le Cordon Bleu, Paris.",
-        image: "/images/chef-ricky.webp",
+        image: "/assets/images/chef-ricky.webp",
     },
     {
         id: "sous-chef",
         name: "Mariam Al Khouri",
         role: "Head Pastry Chef",
         bio: "Mariam's handmade desserts are legendary. Her chocolate lava cake with gold leaf has become the signature finale at Rickys, drawing guests from across Dubai and Abu Dhabi.",
-        image: "/images/chef-maria.webp",
+        image: "/assets/images/chef-maria.webp",
     },
 ];
 
 export const GALLERY_IMAGES: GalleryImage[] = [
-    { id: "g1", src: "/images/hero-bg.webp", alt: "Elegant dining room interior", span: "wide" },
-    { id: "g2", src: "/images/dish-salmon.webp", alt: "Pan-seared salmon plating" },
-    { id: "g3", src: "/images/dish-steak.webp", alt: "Wagyu ribeye presentation" },
-    { id: "g4", src: "/images/catering-setup.webp", alt: "Outdoor garden catering", span: "wide" },
-    { id: "g5", src: "/images/dish-pasta.webp", alt: "Truffle pasta close-up" },
-    { id: "g6", src: "/images/dish-lobster.webp", alt: "Lobster tail plating" },
-    { id: "g7", src: "/images/gallery-cocktails.webp", alt: "Signature craft cocktails at the bar" },
-    { id: "g8", src: "/images/gallery-private-dining.webp", alt: "Private dining room with chandelier" },
+    { id: "g1", src: "/assets/images/hero-bg.webp", alt: "Elegant dining room interior", span: "wide" },
+    { id: "g2", src: "/assets/images/dish-salmon.webp", alt: "Pan-seared salmon plating" },
+    { id: "g3", src: "/assets/images/dish-steak.webp", alt: "Wagyu ribeye presentation" },
+    { id: "g4", src: "/assets/images/catering-setup.webp", alt: "Outdoor garden catering", span: "wide" },
+    { id: "g5", src: "/assets/images/dish-pasta.webp", alt: "Truffle pasta close-up" },
+    { id: "g6", src: "/assets/images/dish-lobster.webp", alt: "Lobster tail plating" },
+    { id: "g7", src: "/assets/images/gallery-cocktails.webp", alt: "Signature craft cocktails at the bar" },
+    { id: "g8", src: "/assets/images/gallery-private-dining.webp", alt: "Private dining room with chandelier" },
 ];
 
 export const MENU_CATEGORIES: MenuCategory[] = [
@@ -55,10 +55,10 @@ export const MENU_CATEGORIES: MenuCategory[] = [
         name: "Main Courses",
         description: "Expertly crafted entrées that define our kitchen",
         items: [
-            { id: "m1", name: "Pan-Seared Salmon", description: "Atlantic salmon, herb butter, seasonal microgreens", price: 38, image: "/images/dish-salmon.webp", badge: "Chef's Pick" },
-            { id: "m2", name: "Wagyu Ribeye", description: "A5 wagyu, red wine reduction, roasted vegetables, truffle jus", price: 72, image: "/images/dish-steak.webp", badge: "Signature" },
-            { id: "m3", name: "Black Truffle Pasta", description: "Handmade fettuccine, black truffle cream, aged parmesan", price: 34, image: "/images/dish-pasta.webp" },
-            { id: "m4", name: "Butter-Poached Lobster", description: "Maine lobster tail, saffron risotto, asparagus, champagne foam", price: 58, image: "/images/dish-lobster.webp", badge: "New" },
+            { id: "m1", name: "Pan-Seared Salmon", description: "Atlantic salmon, herb butter, seasonal microgreens", price: 38, image: "/assets/images/dish-salmon.webp", badge: "Chef's Pick" },
+            { id: "m2", name: "Wagyu Ribeye", description: "A5 wagyu, red wine reduction, roasted vegetables, truffle jus", price: 72, image: "/assets/images/dish-steak.webp", badge: "Signature" },
+            { id: "m3", name: "Black Truffle Pasta", description: "Handmade fettuccine, black truffle cream, aged parmesan", price: 34, image: "/assets/images/dish-pasta.webp" },
+            { id: "m4", name: "Butter-Poached Lobster", description: "Maine lobster tail, saffron risotto, asparagus, champagne foam", price: 58, image: "/assets/images/dish-lobster.webp", badge: "New" },
             { id: "m5", name: "Duck Confit", description: "Slow-cooked duck leg, cherry gastrique, potato gratin", price: 42 },
             { id: "m6", name: "Lamb Rack", description: "Herb-crusted New Zealand lamb, mint pesto, roasted root vegetables", price: 52 },
         ],
@@ -68,7 +68,7 @@ export const MENU_CATEGORIES: MenuCategory[] = [
         name: "Desserts",
         description: "A sweet finale to your dining experience",
         items: [
-            { id: "d1", name: "Chocolate Lava Cake", description: "Warm center, gold leaf, raspberry coulis, vanilla ice cream", price: 16, image: "/images/dish-dessert.webp", badge: "Signature" },
+            { id: "d1", name: "Chocolate Lava Cake", description: "Warm center, gold leaf, raspberry coulis, vanilla ice cream", price: 16, image: "/assets/images/dish-dessert.webp", badge: "Signature" },
             { id: "d2", name: "Crème Brûlée", description: "Classic Tahitian vanilla bean with caramelized sugar", price: 14 },
             { id: "d3", name: "Tiramisu", description: "Espresso-soaked ladyfingers, mascarpone, cocoa dust", price: 15 },
             { id: "d4", name: "Seasonal Sorbet Trio", description: "Three artisan sorbets, fresh fruit garnish", price: 12 },

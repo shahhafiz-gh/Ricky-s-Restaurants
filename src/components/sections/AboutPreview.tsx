@@ -15,7 +15,7 @@ export default function AboutPreview() {
                         <div className="relative">
                             <div className="relative aspect-[4/5] overflow-hidden rounded-card">
                                 <Image
-                                    src="/images/hero-bg.webp"
+                                    src="/assets/images/hero-bg.webp"
                                     alt="Inside Rickys Restaurant"
                                     fill
                                     className="object-cover"

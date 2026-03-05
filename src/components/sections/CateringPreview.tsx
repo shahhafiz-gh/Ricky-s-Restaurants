@@ -77,7 +77,7 @@ export default function CateringPreview() {
                     <FadeIn direction="right" duration={0.8} className="relative order-first lg:order-last">
                         <div className="relative aspect-[4/5] overflow-hidden rounded-card">
                             <Image
-                                src="/images/catering-setup.webp"
+                                src="/assets/images/catering-setup.webp"
                                 alt="Elegant catering setup by Rickys Restaurant"
                                 fill
                                 className="object-cover"

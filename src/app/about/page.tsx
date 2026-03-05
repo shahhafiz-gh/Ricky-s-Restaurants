@@ -15,7 +15,7 @@ export default function AboutPage() {
         <>
             <section className="relative flex h-[50vh] min-h-[360px] items-center justify-center overflow-hidden">
                 <Image
-                    src="/images/hero-bg.webp"
+                    src="/assets/images/hero-bg.webp"
                     alt="Rickys Restaurant dining room"
                     fill
                     className="object-cover"
@@ -59,7 +59,7 @@ export default function AboutPage() {
                         <div className="relative lg:col-span-2">
                             <div className="relative aspect-[3/4] overflow-hidden rounded-card">
                                 <Image
-                                    src="/images/dish-lobster.webp"
+                                    src="/assets/images/dish-lobster.webp"
                                     alt="Signature lobster dish"
                                     fill
                                     className="object-cover"

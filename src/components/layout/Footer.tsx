@@ -37,7 +37,7 @@ export default function Footer() {
                 <div className="space-y-5 sm:col-span-2 lg:col-span-1">
                     <Link href="/" className="group inline-flex items-center">
                         <Image
-                            src="/images/logo.webp"
+                            src="/assets/images/logo.webp"
                             alt="Rickys Restaurant Logo"
                             width={240}
                             height={54}

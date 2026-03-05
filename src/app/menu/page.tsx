@@ -15,7 +15,7 @@ export default function MenuPage() {
         <>
             <section className="relative flex h-[50vh] min-h-[360px] items-center justify-center overflow-hidden">
                 <Image
-                    src="/images/dish-steak.webp"
+                    src="/assets/images/dish-steak.webp"
                     alt="Signature dishes at Rickys Restaurant"
                     fill
                     className="object-cover"

@@ -47,7 +47,7 @@ export const metadata: Metadata = {
         siteName: "Ricky's Restaurant",
         images: [
             {
-                url: "/images/hero-bg.webp",
+                url: "/assets/images/hero-bg.webp",
                 width: 1200,
                 height: 630,
                 alt: "Rickys Restaurant Dining Room",
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
         card: "summary_large_image",
         title: "Ricky's Restaurant — Luxury Dining",
         description: "Premium culinary delights with a warm, elegant atmosphere.",
-        images: ["/images/hero-bg.webp"],
+        images: ["/assets/images/hero-bg.webp"],
     },
     robots: {
         index: true,

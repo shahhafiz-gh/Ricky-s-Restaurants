@@ -13,7 +13,7 @@ export default function Hero() {
             className="relative flex min-h-[90vh] items-center justify-center overflow-hidden"
         >
             <Image
-                src="/images/hero-bg.webp"
+                src="/assets/images/hero-bg.webp"
                 alt="Rickys Restaurant luxury dining interior"
                 fill
                 className="object-cover"
@@ -43,7 +43,7 @@ export default function Hero() {
                     <h1 className="mb-6 max-w-3xl flex justify-center">
                         <span className="sr-only">{SITE_NAME}</span>
                         <Image
-                            src="/images/logo.webp"
+                            src="/assets/images/logo.webp"
                             alt={`${SITE_NAME} Logo`}
                             width={800}
                             height={180}

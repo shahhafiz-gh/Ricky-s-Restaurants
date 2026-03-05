@@ -18,7 +18,7 @@ export default function CateringPage() {
         <>
             <section className="relative flex h-[50vh] min-h-[360px] items-center justify-center overflow-hidden">
                 <Image
-                    src="/images/catering-setup.webp"
+                    src="/assets/images/catering-setup.webp"
                     alt="Luxury catering setup by Rickys Restaurant"
                     fill
                     className="object-cover"

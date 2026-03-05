@@ -69,7 +69,7 @@ export default function ReservationPage() {
                             <div className="relative overflow-hidden rounded-card border border-border shadow-sm">
                                 <div className="relative h-24 w-full">
                                     <Image
-                                        src="/images/hero-bg.webp"
+                                        src="/assets/images/hero-bg.webp"
                                         alt="Dining room"
                                         fill
                                         className="object-cover"

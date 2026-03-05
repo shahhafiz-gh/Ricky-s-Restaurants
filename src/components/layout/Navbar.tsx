@@ -41,7 +41,7 @@ export default function Navbar() {
                         aria-label="Rickys Restaurant — Home"
                     >
                         <Image
-                            src="/images/logo.webp"
+                            src="/assets/images/logo.webp"
                             alt="Rickys Restaurant Logo"
                             width={200}
                             height={45}

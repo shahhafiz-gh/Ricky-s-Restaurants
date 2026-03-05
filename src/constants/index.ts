@@ -62,7 +62,7 @@ export const FEATURED_DISHES: FeaturedDish[] = [
         name: "Pan-Seared Salmon",
         description: "Atlantic salmon with crispy skin, herb butter sauce, and seasonal microgreens.",
         price: 38,
-        image: "/images/dish-salmon.webp",
+        image: "/assets/images/dish-salmon.webp",
         badge: "Chef's Pick",
     },
     {
@@ -70,7 +70,7 @@ export const FEATURED_DISHES: FeaturedDish[] = [
         name: "Wagyu Ribeye",
         description: "Premium A5 wagyu, red wine reduction, roasted vegetables, and truffle jus.",
         price: 72,
-        image: "/images/dish-steak.webp",
+        image: "/assets/images/dish-steak.webp",
         badge: "Signature",
     },
     {
@@ -78,14 +78,14 @@ export const FEATURED_DISHES: FeaturedDish[] = [
         name: "Black Truffle Pasta",
         description: "Handmade fettuccine, black truffle cream, aged parmesan, and fresh herbs.",
         price: 34,
-        image: "/images/dish-pasta.webp",
+        image: "/assets/images/dish-pasta.webp",
     },
     {
         id: "butter-lobster",
         name: "Butter-Poached Lobster",
         description: "Maine lobster tail over saffron risotto with grilled asparagus and champagne foam.",
         price: 58,
-        image: "/images/dish-lobster-tail.webp",
+        image: "/assets/images/dish-lobster-tail.webp",
         badge: "New",
     },
     {
@@ -93,14 +93,14 @@ export const FEATURED_DISHES: FeaturedDish[] = [
         name: "Duck Confit",
         description: "Slow-cooked duck leg with cherry gastrique, layered potato gratin, and micro herbs.",
         price: 42,
-        image: "/images/dish-duck.webp",
+        image: "/assets/images/dish-duck.webp",
     },
     {
         id: "tuna-tartare",
         name: "Tuna Tartare",
         description: "Sushi-grade tuna, avocado, toasted sesame, crispy wontons, and yuzu vinaigrette.",
         price: 22,
-        image: "/images/dish-tuna-tartare.webp",
+        image: "/assets/images/dish-tuna-tartare.webp",
         badge: "Popular",
     },
     {
@@ -108,14 +108,14 @@ export const FEATURED_DISHES: FeaturedDish[] = [
         name: "Herb-Crusted Lamb",
         description: "New Zealand lamb rack with mint pesto, roasted root vegetables, and rosemary jus.",
         price: 52,
-        image: "/images/dish-lamb.webp",
+        image: "/assets/images/dish-lamb.webp",
     },
     {
         id: "creme-brulee",
         name: "Crème Brûlée",
         description: "Classic Tahitian vanilla bean custard with caramelized sugar, fresh berries, and mint.",
         price: 14,
-        image: "/images/dish-brulee.webp",
+        image: "/assets/images/dish-brulee.webp",
         badge: "Dessert",
     },
 ];
