@@ -1,0 +1,190 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer base {
+
+  :root {
+    /* Cream-tinted background keeps the luxury feel warm */
+    --background: 43 60% 97%;
+    /* #FDFAF2 cream-white */
+    --foreground: 22 40% 12%;
+    /* #3B2A1A dark brown */
+
+    --card: 40 40% 98%;
+    /* slightly warm white */
+    --card-foreground: 22 40% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 22 40% 12%;
+
+    --primary: 40 55% 51%;
+    /* #C89B3C gold */
+    --primary-foreground: 0 0% 100%;
+    /* white text on gold */
+
+    --secondary: 22 40% 16%;
+    /* #3B2A1A dark brown */
+    --secondary-foreground: 43 60% 97%;
+
+    --muted: 40 20% 93%;
+    --muted-foreground: 22 10% 48%;
+
+    --accent: 40 55% 51%;
+    /* gold accent */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 30 15% 88%;
+    --input: 30 15% 88%;
+    --ring: 40 55% 51%;
+    /* gold focus ring */
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 22 45% 7%;
+    /* deep brown-black */
+    --foreground: 40 30% 92%;
+    /* warm cream text */
+
+    --card: 22 35% 10%;
+    --card-foreground: 40 30% 92%;
+
+    --popover: 22 35% 10%;
+    --popover-foreground: 40 30% 92%;
+
+    --primary: 40 55% 51%;
+    /* gold stays vibrant */
+    --primary-foreground: 22 45% 7%;
+
+    --secondary: 40 20% 18%;
+    --secondary-foreground: 40 30% 92%;
+
+    --muted: 22 20% 16%;
+    --muted-foreground: 40 12% 55%;
+
+    --accent: 40 55% 51%;
+    --accent-foreground: 22 45% 7%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 22 20% 18%;
+    --input: 22 20% 18%;
+    --ring: 40 55% 51%;
+  }
+}
+
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    @apply scroll-smooth antialiased;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display tracking-tight;
+  }
+
+  h1 {
+    @apply text-display-lg font-bold md:text-display-xl;
+  }
+
+  h2 {
+    @apply text-display-sm font-bold md:text-display-md;
+  }
+
+  h3 {
+    @apply text-heading-lg font-semibold;
+  }
+
+  h4 {
+    @apply text-heading-md font-semibold;
+  }
+
+  p {
+    @apply text-body-md leading-relaxed;
+  }
+
+  a {
+    @apply transition-colors duration-200;
+  }
+
+  /* Selection colour matches the brand */
+  ::selection {
+    @apply bg-gold/30 text-brown-900;
+  }
+}
+
+
+
+@layer components {
+
+  .section {
+    @apply py-section;
+  }
+
+  .section-lg {
+    @apply py-section-lg;
+  }
+
+  .section-sm {
+    @apply py-section-sm;
+  }
+
+  .gold-divider {
+    @apply mx-auto h-px w-24 bg-gold-gradient;
+  }
+
+  .gold-divider-lg {
+    @apply mx-auto h-0.5 w-40 bg-gold-gradient;
+  }
+
+  .glass-panel {
+    @apply bg-background/70 backdrop-blur-lg border border-border/50 shadow-card;
+  }
+
+  .text-gold-shimmer {
+    @apply bg-clip-text text-transparent bg-shimmer-gradient bg-[length:200%_100%] animate-shimmer;
+  }
+}
+
+
+
+@layer utilities {
+
+  .scrollbar-hidden {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+  }
+
+  .overlay-dark {
+    @apply absolute inset-0 bg-brown/70;
+  }
+
+  .overlay-gradient {
+    @apply absolute inset-0 bg-hero-gradient;
+  }
+}
